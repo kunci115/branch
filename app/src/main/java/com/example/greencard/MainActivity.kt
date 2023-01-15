@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 import android.app.Application
+import android.content.Context
 import android.content.Intent
 import android.util.Log
 import io.branch.referral.Branch
@@ -61,12 +62,14 @@ class MainActivity : AppCompatActivity() {
         Branch.getAutoInstance(this)
 
     }
-    fun sendMessage(view: View?) {
+
+    fun sendMessage(view: View) {
         // Do something in response to button click
         Toast.makeText(this, "Ini click", Toast.LENGTH_SHORT).show()
     }
 
-    fun deepMessage(view: View?) {
+
+    fun deepMessage(view: View) {
         // Do something in response to button click
         Toast.makeText(this, "Ini deep", Toast.LENGTH_SHORT).show()
     }

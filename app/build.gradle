@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.greencard'
-    compileSdkVersion 33
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.greencard"
-        minSdkVersion 21
-        targetSdkVersion
+        minSdk 21
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 

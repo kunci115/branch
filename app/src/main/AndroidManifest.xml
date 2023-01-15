@@ -19,7 +19,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:launchMode="singleTask"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +26,7 @@
             </intent-filter>
             <intent-filter>
                 <!-- If utilizing $deeplink_path please explicitly declare your hosts, or utilize a wildcard(*) -->
-                <data android:scheme="GreenCard" android:host="open"
+                <data android:scheme="greencard" android:host="open"
                     tools:ignore="AppLinkUrlError" />
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -38,7 +37,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="czfeb.app.link" />
+                <data android:scheme="https" android:host="https://czfeb.app.link/" />
                 <data android:scheme="https" android:host="czfeb-alternate.app.link"/>
             </intent-filter>
             <!-- Branch App Links - Test App -->
@@ -46,7 +45,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="czfeb.app.link" />
+                <data android:scheme="https" android:host="https://czfeb.app.link/" />
                 <data android:scheme="https" android:host="czfeb-alternate.app.link"/>
             </intent-filter>
             <meta-data
@@ -55,8 +54,8 @@
         </activity>
         <!-- Branch init -->
         <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_ek17Wt1e7LVo0MDokHQO1gknAsbZdBLG" />
-<!--        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_kdY79tR2LCMXy0qyJJ4AgfflDwoKBYyr" />-->
-<!--        <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />-->
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="secret_live_0BeTvi6lvlW2LPBl4ZKB5jezfWqyLv2E" />
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />
     </application>
 
     <queries>
